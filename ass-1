@@ -1,0 +1,14 @@
+x=int(input())
+d={}
+for i in range(x):
+    c=input().split()
+    d[c[0]] = c[1]
+while True:
+    try:
+        NAME=input()
+        if NAME in d:
+            print(NAME,"=",d[NAME],sep='')
+        else:
+            print("Not found")
+    except:
+        break
